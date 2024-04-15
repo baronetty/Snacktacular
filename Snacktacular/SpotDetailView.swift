@@ -20,10 +20,11 @@ struct SpotDetailView: View {
                 TextField("Address", text: $spot.address)
                     .font(.title2)
             }
+            .disabled(spot.id == nil ? false : true)
             .textFieldStyle(.roundedBorder)
             .overlay {
                 RoundedRectangle(cornerRadius: 5)
-                    .stroke(.gray.opacity(0.5), lineWidth: 2)
+                    .stroke(.gray.opacity(0.5), lineWidth: spot.id == nil ? 2 : 0)
             }
             .padding(.horizontal)
             
