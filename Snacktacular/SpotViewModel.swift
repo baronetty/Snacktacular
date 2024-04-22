@@ -25,7 +25,7 @@ class SpotViewModel: ObservableObject {
             }
         } else { // no id? Then this must be a new spot to add
             do {
-                try await dataBase.collection("spots").addDocument(data: spot.dictionary)
+                _ = try await dataBase.collection("spots").addDocument(data: spot.dictionary)
                 print("🐣 Data added successfully.")
                 return true
             } catch {
