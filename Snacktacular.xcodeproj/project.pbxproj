@@ -11,6 +11,13 @@
 		B3154FAB2BC7FC2F007502EA /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3154FAA2BC7FC2F007502EA /* Spot.swift */; };
 		B3154FAD2BC7FDA7007502EA /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3154FAC2BC7FDA7007502EA /* SpotDetailView.swift */; };
 		B3154FAF2BC8014B007502EA /* SpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3154FAE2BC8014B007502EA /* SpotViewModel.swift */; };
+		B35784EB2BD93F9000CB5D01 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35784EA2BD93F9000CB5D01 /* Review.swift */; };
+		B35784ED2BD941BF00CB5D01 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35784EC2BD941BF00CB5D01 /* ReviewView.swift */; };
+		B3C376DC2BDA53FC0027C716 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376DB2BDA53FC0027C716 /* PlaceViewModel.swift */; };
+		B3C376DE2BDA540C0027C716 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376DD2BDA540C0027C716 /* LocationManager.swift */; };
+		B3C376E02BDA541B0027C716 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376DF2BDA541B0027C716 /* Place.swift */; };
+		B3C376E22BDA54270027C716 /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376E12BDA54270027C716 /* PlaceLookupView.swift */; };
+		B3C376E42BDA5D370027C716 /* StarsSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376E32BDA5D370027C716 /* StarsSelectionView.swift */; };
 		B3C3DDA52BC53C7A00B25084 /* SnacktacularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3DDA42BC53C7A00B25084 /* SnacktacularApp.swift */; };
 		B3C3DDA72BC53C7A00B25084 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3DDA62BC53C7A00B25084 /* LoginView.swift */; };
 		B3C3DDA92BC53C7B00B25084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C3DDA82BC53C7B00B25084 /* Assets.xcassets */; };
@@ -20,10 +27,6 @@
 		B3C3DDB92BC5408000B25084 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3C3DDB82BC5408000B25084 /* FirebaseFirestoreSwift */; };
 		B3C3DDBB2BC5408000B25084 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B3C3DDBA2BC5408000B25084 /* FirebaseStorage */; };
 		B3C3DDBD2BC5445500B25084 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3C3DDBC2BC5445500B25084 /* GoogleService-Info.plist */; };
-		B3DC4A862BD691F50046503A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC4A822BD691F50046503A /* LocationManager.swift */; };
-		B3DC4A872BD691F50046503A /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC4A832BD691F50046503A /* Place.swift */; };
-		B3DC4A882BD691F50046503A /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC4A842BD691F50046503A /* PlaceViewModel.swift */; };
-		B3DC4A892BD691F50046503A /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC4A852BD691F50046503A /* PlaceLookupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,13 @@
 		B3154FAA2BC7FC2F007502EA /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		B3154FAC2BC7FDA7007502EA /* SpotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailView.swift; sourceTree = "<group>"; };
 		B3154FAE2BC8014B007502EA /* SpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewModel.swift; sourceTree = "<group>"; };
+		B35784EA2BD93F9000CB5D01 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		B35784EC2BD941BF00CB5D01 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		B3C376DB2BDA53FC0027C716 /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		B3C376DD2BDA540C0027C716 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B3C376DF2BDA541B0027C716 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B3C376E12BDA54270027C716 /* PlaceLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceLookupView.swift; sourceTree = "<group>"; };
+		B3C376E32BDA5D370027C716 /* StarsSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsSelectionView.swift; sourceTree = "<group>"; };
 		B3C3DDA12BC53C7A00B25084 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C3DDA42BC53C7A00B25084 /* SnacktacularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacktacularApp.swift; sourceTree = "<group>"; };
 		B3C3DDA62BC53C7A00B25084 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -38,10 +48,6 @@
 		B3C3DDAB2BC53C7B00B25084 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3C3DDB22BC53D6D00B25084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B3C3DDBC2BC5445500B25084 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B3DC4A822BD691F50046503A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = PlaceLookupDemo/PlaceLookupDemo/LocationManager.swift; sourceTree = SOURCE_ROOT; };
-		B3DC4A832BD691F50046503A /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = PlaceLookupDemo/PlaceLookupDemo/Place.swift; sourceTree = SOURCE_ROOT; };
-		B3DC4A842BD691F50046503A /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceViewModel.swift; path = PlaceLookupDemo/PlaceLookupDemo/PlaceViewModel.swift; sourceTree = SOURCE_ROOT; };
-		B3DC4A852BD691F50046503A /* PlaceLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceLookupView.swift; path = PlaceLookupDemo/PlaceLookupDemo/PlaceLookupView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B35784E72BD93ECB00CB5D01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3C376DF2BDA541B0027C716 /* Place.swift */,
+				B3154FAA2BC7FC2F007502EA /* Spot.swift */,
+				B35784EA2BD93F9000CB5D01 /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B35784E82BD93F0500CB5D01 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B3154FAE2BC8014B007502EA /* SpotViewModel.swift */,
+				B3C376DD2BDA540C0027C716 /* LocationManager.swift */,
+				B3C376DB2BDA53FC0027C716 /* PlaceViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B35784E92BD93F2600CB5D01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3C3DDA62BC53C7A00B25084 /* LoginView.swift */,
+				B3154FA82BC7DC2B007502EA /* ListView.swift */,
+				B3154FAC2BC7FDA7007502EA /* SpotDetailView.swift */,
+				B3C376E12BDA54270027C716 /* PlaceLookupView.swift */,
+				B35784EC2BD941BF00CB5D01 /* ReviewView.swift */,
+				B3C376E32BDA5D370027C716 /* StarsSelectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B3C3DD982BC53C7A00B25084 = {
 			isa = PBXGroup;
 			children = (
@@ -80,15 +119,9 @@
 			children = (
 				B3C3DDB22BC53D6D00B25084 /* Info.plist */,
 				B3C3DDA42BC53C7A00B25084 /* SnacktacularApp.swift */,
-				B3DC4A832BD691F50046503A /* Place.swift */,
-				B3154FAA2BC7FC2F007502EA /* Spot.swift */,
-				B3154FAE2BC8014B007502EA /* SpotViewModel.swift */,
-				B3DC4A822BD691F50046503A /* LocationManager.swift */,
-				B3DC4A842BD691F50046503A /* PlaceViewModel.swift */,
-				B3C3DDA62BC53C7A00B25084 /* LoginView.swift */,
-				B3154FA82BC7DC2B007502EA /* ListView.swift */,
-				B3154FAC2BC7FDA7007502EA /* SpotDetailView.swift */,
-				B3DC4A852BD691F50046503A /* PlaceLookupView.swift */,
+				B35784E72BD93ECB00CB5D01 /* Models */,
+				B35784E82BD93F0500CB5D01 /* ViewModels */,
+				B35784E92BD93F2600CB5D01 /* Views */,
 				B3C3DDA82BC53C7B00B25084 /* Assets.xcassets */,
 				B3C3DDBC2BC5445500B25084 /* GoogleService-Info.plist */,
 				B3C3DDAA2BC53C7B00B25084 /* Preview Content */,
@@ -185,15 +218,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3154FAD2BC7FDA7007502EA /* SpotDetailView.swift in Sources */,
-				B3DC4A882BD691F50046503A /* PlaceViewModel.swift in Sources */,
-				B3DC4A892BD691F50046503A /* PlaceLookupView.swift in Sources */,
+				B3C376E02BDA541B0027C716 /* Place.swift in Sources */,
 				B3C3DDA72BC53C7A00B25084 /* LoginView.swift in Sources */,
+				B3C376E42BDA5D370027C716 /* StarsSelectionView.swift in Sources */,
+				B35784ED2BD941BF00CB5D01 /* ReviewView.swift in Sources */,
 				B3154FAF2BC8014B007502EA /* SpotViewModel.swift in Sources */,
-				B3DC4A872BD691F50046503A /* Place.swift in Sources */,
-				B3DC4A862BD691F50046503A /* LocationManager.swift in Sources */,
+				B35784EB2BD93F9000CB5D01 /* Review.swift in Sources */,
+				B3C376DC2BDA53FC0027C716 /* PlaceViewModel.swift in Sources */,
 				B3C3DDA52BC53C7A00B25084 /* SnacktacularApp.swift in Sources */,
 				B3154FA92BC7DC2B007502EA /* ListView.swift in Sources */,
+				B3C376E22BDA54270027C716 /* PlaceLookupView.swift in Sources */,
 				B3154FAB2BC7FC2F007502EA /* Spot.swift in Sources */,
+				B3C376DE2BDA540C0027C716 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
