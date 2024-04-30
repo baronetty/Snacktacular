@@ -11,6 +11,7 @@ struct ReviewView: View {
     @Environment(\.dismiss) private var dismiss
     @State var spot: Spot
     @State var review: Review
+    @StateObject var reviewVM = ReviewViewModel()
     
     var body: some View {
         VStack {
@@ -30,7 +31,7 @@ struct ReviewView: View {
                 .font(.title2)
                 .bold()
             HStack {
-                StarsSelectionView(rating: review.rating)
+                StarsSelectionView(rating: $review.rating)
                     .overlay {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(.gray.opacity(0.5), lineWidth: 2)
@@ -74,8 +75,15 @@ struct ReviewView: View {
             
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Save") {
-                    // TODO: Add save code here
-                    dismiss()
+                    Task {
+                        let success = await reviewVM.saveReview(spot: spot, review: review)
+                        
+                        if success {
+                            dismiss()
+                        } else {
+                            print("🤬 ERROR saving data in ReviewView")
+                        }
+                    }
                 }
             }
         }

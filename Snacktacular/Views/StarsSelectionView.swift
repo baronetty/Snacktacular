@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StarsSelectionView: View {
-    @State var rating: Int // change this to @Binging after layout is tested
+    @Binding var rating: Int // change this to @Binging after layout is tested
     let highestRating = 5
     let unselected = Image(systemName: "star")
     let selected = Image(systemName: "star.fill")
@@ -39,5 +39,5 @@ struct StarsSelectionView: View {
 }
 
 #Preview {
-    StarsSelectionView(rating: 4)
+    StarsSelectionView(rating: .constant(4))
 }

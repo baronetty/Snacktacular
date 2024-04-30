@@ -27,6 +27,7 @@
 		B3C3DDB92BC5408000B25084 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3C3DDB82BC5408000B25084 /* FirebaseFirestoreSwift */; };
 		B3C3DDBB2BC5408000B25084 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B3C3DDBA2BC5408000B25084 /* FirebaseStorage */; };
 		B3C3DDBD2BC5445500B25084 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3C3DDBC2BC5445500B25084 /* GoogleService-Info.plist */; };
+		B3E77E232BE100F4005F873B /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E77E222BE100F4005F873B /* ReviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B3C3DDAB2BC53C7B00B25084 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3C3DDB22BC53D6D00B25084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B3C3DDBC2BC5445500B25084 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B3E77E222BE100F4005F873B /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				B3154FAE2BC8014B007502EA /* SpotViewModel.swift */,
+				B3E77E222BE100F4005F873B /* ReviewViewModel.swift */,
 				B3C376DD2BDA540C0027C716 /* LocationManager.swift */,
 				B3C376DB2BDA53FC0027C716 /* PlaceViewModel.swift */,
 			);
@@ -219,6 +222,7 @@
 			files = (
 				B3154FAD2BC7FDA7007502EA /* SpotDetailView.swift in Sources */,
 				B3C376E02BDA541B0027C716 /* Place.swift in Sources */,
+				B3E77E232BE100F4005F873B /* ReviewViewModel.swift in Sources */,
 				B3C3DDA72BC53C7A00B25084 /* LoginView.swift in Sources */,
 				B3C376E42BDA5D370027C716 /* StarsSelectionView.swift in Sources */,
 				B35784ED2BD941BF00CB5D01 /* ReviewView.swift in Sources */,
