@@ -63,7 +63,7 @@ struct SpotDetailView: View {
                         NavigationLink {
                             ReviewView(spot: spot, review: review)
                         } label: {
-                            Text(review.title) //TODO: build a custom cell showing stars, title and body
+                            SpotReviewRowView(review: review)
                         }
                         
                     }
