@@ -31,6 +31,13 @@ struct SpotDetailView: View {
     @State private var annotations: [Annotation] = []
     let regionSize = 500.0 // meters
     var previewRunning = false
+    var avgRating: String {
+        guard reviews.count != 0 else {
+            return "-.-"
+        }
+        let averageValue = Double(reviews.reduce(0) {$0 + $1.rating}) / Double(reviews.count)
+        return String(format: "%.1f", averageValue)
+    }
     
     var body: some View {
         VStack {
@@ -73,7 +80,7 @@ struct SpotDetailView: View {
                             .font(.title2)
                             .bold()
                         
-                        Text("4.5") // TODO: Change this to a computed property
+                        Text(avgRating)
                             .font(.title)
                             .fontWeight(.black)
                             .foregroundStyle(Color("SnackColor"))
