@@ -7,6 +7,7 @@
 
 import FirebaseFirestoreSwift
 import MapKit
+import PhotosUI
 import SwiftUI
 
 struct SpotDetailView: View {
@@ -29,6 +30,7 @@ struct SpotDetailView: View {
     @State private var showingAsSheet = false
     @State private var mapRegion = MKCoordinateRegion()
     @State private var annotations: [Annotation] = []
+    @State private var selectedPhoto: PhotosPickerItem?
     let regionSize = 500.0 // meters
     var previewRunning = false
     var avgRating: String {
@@ -64,6 +66,59 @@ struct SpotDetailView: View {
                 mapRegion.center = spot.coordinate
             }
             
+            HStack {
+                Group {
+                    Text("Avg. Rating:")
+                        .font(.title2)
+                        .bold()
+                    
+                    Text(avgRating)
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundStyle(Color("SnackColor"))
+                }
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
+                
+                Spacer()
+                
+                Group {
+                    PhotosPicker(selection: $selectedPhoto, matching: .images, preferredItemEncoding: .automatic) {
+                        Image(systemName: "photo")
+                        Text("Photo")
+                    }
+                    .onChange(of: selectedPhoto) { newValue, oldValue in
+                        Task {
+                            do {
+                                if let data  = try await newValue?.loadTransferable(type: Image.self) {
+                                    if let uiImage = UIImage(data: data) {
+                                        // TODO: set image = Image(uiImage: uiImage) or call your function to save the image
+                                        print("📸 successfully selected image")
+                                    }
+                                }
+                            } catch {
+                                print("🤬 ERROR: selecting image failed \(error.localizedDescription)")
+                            }
+                        }
+                    }
+                    
+                    Button("Rate", systemImage: "star.fill") {
+                        if spot.id == nil {
+                            showSaveAlert.toggle()
+                        } else {
+                            showReviewViewSheet.toggle()
+                        }
+                    }
+                }
+                .font(.caption)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
+                .buttonStyle(.borderedProminent)
+                .bold()
+                .tint(Color("SnackColor"))
+            }
+            .padding(.horizontal)
+            
             List {
                 Section {
                     ForEach(reviews) { review in
@@ -74,33 +129,8 @@ struct SpotDetailView: View {
                         }
                         
                     }
-                } header: {
-                    HStack {
-                        Text("Avg. Rating:")
-                            .font(.title2)
-                            .bold()
-                        
-                        Text(avgRating)
-                            .font(.title)
-                            .fontWeight(.black)
-                            .foregroundStyle(Color("SnackColor"))
-                        
-                        Spacer()
-                        
-                        Button("Rate It") {
-                            if spot.id == nil {
-                                showSaveAlert.toggle()
-                            } else {
-                                showReviewViewSheet.toggle()
-                            }
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .bold()
-                        .tint(Color("SnackColor"))
-                    }
                 }
             }
-            .headerProminence(.increased)
             .listStyle(.plain)
             
             Spacer()
@@ -164,6 +194,8 @@ struct SpotDetailView: View {
                         }
                     }
                 }
+            } else {
+                print("No sheet.")
             }
         }
         .sheet(isPresented: $showPlaceLookupSheet) {

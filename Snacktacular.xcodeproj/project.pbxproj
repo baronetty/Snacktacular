@@ -13,6 +13,7 @@
 		B3154FAF2BC8014B007502EA /* SpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3154FAE2BC8014B007502EA /* SpotViewModel.swift */; };
 		B35784EB2BD93F9000CB5D01 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35784EA2BD93F9000CB5D01 /* Review.swift */; };
 		B35784ED2BD941BF00CB5D01 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35784EC2BD941BF00CB5D01 /* ReviewView.swift */; };
+		B36395F92C04A299009D0459 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36395F82C04A299009D0459 /* Photo.swift */; };
 		B3C376DC2BDA53FC0027C716 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376DB2BDA53FC0027C716 /* PlaceViewModel.swift */; };
 		B3C376DE2BDA540C0027C716 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376DD2BDA540C0027C716 /* LocationManager.swift */; };
 		B3C376E02BDA541B0027C716 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C376DF2BDA541B0027C716 /* Place.swift */; };
@@ -38,6 +39,7 @@
 		B3154FAE2BC8014B007502EA /* SpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewModel.swift; sourceTree = "<group>"; };
 		B35784EA2BD93F9000CB5D01 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		B35784EC2BD941BF00CB5D01 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		B36395F82C04A299009D0459 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B3C376DB2BDA53FC0027C716 /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		B3C376DD2BDA540C0027C716 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B3C376DF2BDA541B0027C716 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				B3C376DF2BDA541B0027C716 /* Place.swift */,
 				B3154FAA2BC7FC2F007502EA /* Spot.swift */,
 				B35784EA2BD93F9000CB5D01 /* Review.swift */,
+				B36395F82C04A299009D0459 /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36395F92C04A299009D0459 /* Photo.swift in Sources */,
 				B3154FAD2BC7FDA7007502EA /* SpotDetailView.swift in Sources */,
 				B3C376E02BDA541B0027C716 /* Place.swift in Sources */,
 				B3E77E232BE100F4005F873B /* ReviewViewModel.swift in Sources */,
@@ -381,6 +385,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +417,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
